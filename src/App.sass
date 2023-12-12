@@ -1,0 +1,59 @@
+*
+  margin: 0
+
+:root
+  line-height: 1.5
+  font-weight: 400
+  color-scheme: light dark
+  font-synthesis: none
+  text-rendering: optimizeLegibility
+  font-family: "Bai Jamjuree", sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  margin: 0
+  display: flex
+  min-width: 320px
+  min-height: 100vh
+  align-items: center
+  flex-direction: column
+
+  h1, h2, h3
+    color: hsl(210, 10%, 33%)
+
+  p
+    color: hsl(201, 11%, 66%)
+
+  header
+    background-image: url('src/assets/bg-header-desktop.png')
+    width: 100%
+    background-repeat: no-repeat
+
+  .row
+    display: flex
+    flex-direction: row
+    align-items: center
+
+  .logo
+    height: 6em
+    padding: 1.5em
+
+    &:hover
+      filter: drop-shadow(0 0 2em #646cffaa)
+
+    &.react:hover
+      filter: drop-shadow(0 0 2em #61dafbaa)
+
+  a
+    font-weight: 600
+    text-decoration: inherit
+
+  // @media (prefers-color-scheme: light)
+  //   :root
+  //     color: #213547
+  //     background-color: #ffffff
+
+  //   a:hover
+  //     color: #747bff
+
+  //   button
+  //     background-color: #f9f9f9
