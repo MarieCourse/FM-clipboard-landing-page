@@ -1,5 +1,6 @@
 import BlocText from '../BlocText/BlocText';
-import Button from '../Button/Button';
+import Download from '../Download/Download';
+
 import './Header.sass';
 
 function Header() {
@@ -13,10 +14,7 @@ function Header() {
           'Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.'
         }
       />
-      <div className="main__buttons">
-        <Button text="Download for iOS" colorClassName={'green'} link="#" />
-        <Button text="Download for MAC" colorClassName={'violet'} link="#" />
-      </div>
+      <Download />
     </header>
   );
 }

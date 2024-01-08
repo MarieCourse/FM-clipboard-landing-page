@@ -1,0 +1,30 @@
+.footer
+    display: flex
+    flex-direction: row
+    background-color: #f5f6f8
+    height: 100px
+    justify-content: space-around
+    align-items: center
+    &__logo
+        width: 30px
+        height: 30px
+    > ul
+        column-count: 3
+        color: inherit
+        width: 50%
+        > li
+            > a
+                color: hsl(210, 10%, 33%)
+                &:hover
+                    color: hsl(171, 66%, 44%)
+
+    &__icons
+        gap: 20px
+        > img
+            width: 20px
+            height: 20px
+            margin: 10px
+            fill: hsl(210, 10%, 33%)
+            cursor: pointer
+            &:hover
+                fill: hsl(171, 66%, 44%)

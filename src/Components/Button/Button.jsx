@@ -8,16 +8,14 @@ function Button({ link, text, colorClassName }) {
     colorClassName: PropTypes.oneOf(['green', 'violet']).isRequired,
   };
   return (
-    <div>
-      <a
-        href={link}
-        rel="noreferrer"
-        className={`button ${colorClassName}`}
-        cursor="pointer"
-      >
-        {text}
-      </a>
-    </div>
+    <a
+      href={link}
+      rel="noreferrer"
+      className={`button ${colorClassName}`}
+      cursor="pointer"
+    >
+      {text}
+    </a>
   );
 }
 
