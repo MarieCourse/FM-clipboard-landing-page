@@ -1,21 +1,33 @@
 import './App.sass';
 import BlocText from '../src/Components/BlocText/BlocText';
-import Header from '../src/Components/Header/Header';
+// import Header from '../src/Components/Header/Header';
 import Download from '../src/Components/Download/Download';
 import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <div>
-      <Header />
-      <BlocText
-        level={2}
-        title={'Keep track of your snippets'}
-        paragraph={
-          'Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.'
-        }
-      />
-      <div className="row">
+      <section>
+        <img src="src\assets\logo.svg" alt="logo-frontend-mentor-projet" />
+        <BlocText
+          level={1}
+          title={'A history of everyting you copy'}
+          paragraph={
+            'Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.'
+          }
+        />
+        <Download />
+      </section>
+      <section>
+        <BlocText
+          level={2}
+          title={'Keep track of your snippets'}
+          paragraph={
+            'Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.'
+          }
+        />
+      </section>
+      <section className="row">
         <img src="src\assets\image-computer.png" alt="computer-mac-desktop" />
         <div>
           <BlocText
@@ -43,50 +55,58 @@ function App() {
             alignClassName={'left'}
           />
         </div>
-      </div>
-      <BlocText
-        level={2}
-        title={'Access Clipboard Anywhere'}
-        paragraph={
-          "Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks."
-        }
+      </section>
+      <section>
+        <BlocText
+          level={2}
+          title={'Access Clipboard Anywhere'}
+          paragraph={
+            "Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks."
+          }
+        />
+      </section>
+      <img
+        src="src\assets\image-devices.png"
+        alt="devices"
+        className="devices"
       />
-      <img src="src\assets\image-devices.png" alt="devices" />
-      <BlocText
-        level={2}
-        title={'Supercharge your workflow'}
-        paragraph={"We've got the tools to boost your productivity."}
-      />
-      <div className="row">
+      <section>
         <BlocText
-          level={3}
-          icon={'src/assets/icon-blacklist.svg'}
-          alt={'icon-blacklist'}
-          title={'Create blacklists'}
-          paragraph={
-            'Ensure sensitive information never makes its way to your clipboard by excluding certain sources'
-          }
+          level={2}
+          title={'Supercharge your workflow'}
+          paragraph={"We've got the tools to boost your productivity."}
         />
-        <BlocText
-          level={3}
-          icon={'src/assets/icon-text.svg'}
-          alt={'icon-text'}
-          title={'Plain text snippets'}
-          paragraph={
-            'Remove unwanted formatting from copied text for a consistent look.'
-          }
-        />
-        <BlocText
-          level={3}
-          icon={'src/assets/icon-preview.svg'}
-          alt={'icon-preview'}
-          title={'Sneak preview'}
-          paragraph={
-            'Quick preview of all snippets on your Clipboard for easy access.'
-          }
-        />
-      </div>
-      <div className="row logos">
+        <div className="row">
+          <BlocText
+            level={3}
+            icon={'src/assets/icon-blacklist.svg'}
+            alt={'icon-blacklist'}
+            title={'Create blacklists'}
+            paragraph={
+              'Ensure sensitive information never makes its way to your clipboard by excluding certain sources'
+            }
+          />
+          <BlocText
+            level={3}
+            icon={'src/assets/icon-text.svg'}
+            alt={'icon-text'}
+            title={'Plain text snippets'}
+            paragraph={
+              'Remove unwanted formatting from copied text for a consistent look.'
+            }
+          />
+          <BlocText
+            level={3}
+            icon={'src/assets/icon-preview.svg'}
+            alt={'icon-preview'}
+            title={'Sneak preview'}
+            paragraph={
+              'Quick preview of all snippets on your Clipboard for easy access.'
+            }
+          />
+        </div>
+      </section>
+      <section className="row logos">
         <img src="src/assets/logo-google.png" alt="Logo Google" />
         <img src="src/assets/logo-ibm.png" alt="Logo IBM" />
         <img src="src/assets/logo-microsoft.png" alt="Logo Microsoft" />
@@ -95,8 +115,8 @@ function App() {
           src="src/assets/logo-vector-graphics.png"
           alt="Logo Vector Graphics"
         />
-      </div>
-      <div>
+      </section>
+      <section>
         <BlocText
           level={2}
           title={'Clipboard for iOS and Mac OS'}
@@ -105,7 +125,7 @@ function App() {
           }
         />
         <Download />
-      </div>
+      </section>
       <Footer />
     </div>
   );

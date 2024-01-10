@@ -1,4 +1,10 @@
 import './Footer.sass';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faSquareFacebook,
+  faTwitter,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -26,9 +32,9 @@ function Footer() {
         </li>
       </ul>
       <div className="footer__icons">
-        <img src="src/assets/icon-facebook.svg" alt="Logo Facebook" />
-        <img src="src/assets/icon-twitter.svg" alt="Logo Twitter" />
-        <img src="src/assets/icon-instagram.svg" alt="Logo Instagram" />
+        <FontAwesomeIcon icon={faSquareFacebook} className="icon" />
+        <FontAwesomeIcon icon={faTwitter} className="icon" />
+        <FontAwesomeIcon icon={faInstagram} className="icon" />
       </div>
     </div>
   );
