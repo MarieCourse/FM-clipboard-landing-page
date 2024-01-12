@@ -20,21 +20,19 @@
   background-image: url('src/assets/bg-header-desktop.png')
   width: 100%
   background-repeat: no-repeat
-  font-size: 15px
+  font-size: 18px
+  // text-align: center
 
   h1, h2, h3
     color: hsl(210, 10%, 33%)
-  h1
-    font-size: 2.5rem
-  h2
-    font-size: 2rem
-  h3
-    font-size: 1.5rem
 
   p
     color: hsl(201, 11%, 66%)
 
   section
+    display: flex
+    flex-direction: column
+    align-items: center
     margin: 80px auto
 
   .row
@@ -42,22 +40,30 @@
     flex-direction: row
     align-items: center
     justify-content: flex-start
-    &.logos
-      margin: 150px 0
+    &.tools
+      align-items: top
+    &.logos, &.tools
+      margin: 75px 150px
       justify-content: space-between
+      gap: 20px
+      >.blocText
+        width: 280px
+        >img
+          margin: 25px
+      >img
+        width: 120px
 
   .logo
     height: 6em
     padding: 1.5em
 
-    &:hover
-      filter: drop-shadow(0 0 2em #646cffaa)
+    // &:hover
+    //   filter: drop-shadow(0 0 2em #646cffaa)
 
-    &.react:hover
-      filter: drop-shadow(0 0 2em #61dafbaa)
+    // &.react:hover
+    //   filter: drop-shadow(0 0 2em #61dafbaa)
 
   a
-    font-weight: 600
     text-decoration: inherit
 
   ul
@@ -66,14 +72,3 @@
   .devices
     display: flex
     margin: 30px auto
-
-  // @media (prefers-color-scheme: light)
-  //   :root
-  //     color: #213547
-  //     background-color: #ffffff
-
-  //   a:hover
-  //     color: #747bff
-
-  //   button
-  //     background-color: #f9f9f9

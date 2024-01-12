@@ -8,13 +8,18 @@ function App() {
   return (
     <div>
       <section>
-        <img src="src\assets\logo.svg" alt="logo-frontend-mentor-projet" />
+        <img
+          src="src\assets\logo.svg"
+          alt="logo-frontend-mentor-projet"
+          className="logo"
+        />
         <BlocText
           level={1}
           title={'A history of everyting you copy'}
           paragraph={
             'Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.'
           }
+          levelClassName={'lv-1'}
         />
         <Download />
       </section>
@@ -25,6 +30,7 @@ function App() {
           paragraph={
             'Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.'
           }
+          levelClassName={'lv-2'}
         />
       </section>
       <section className="row">
@@ -36,7 +42,8 @@ function App() {
             paragraph={
               'Easily search your snippets by content, category, web address, application, and more.'
             }
-            alignClassName={'left'}
+            alignClassName={'al-left'}
+            levelClassName={'lv-3'}
           />
           <BlocText
             level={3}
@@ -44,7 +51,8 @@ function App() {
             paragraph={
               'Instantly saves and syncs snippets across all your devices.'
             }
-            alignClassName={'left'}
+            alignClassName={'al-left'}
+            levelClassName={'lv-3'}
           />
           <BlocText
             level={3}
@@ -52,7 +60,8 @@ function App() {
             paragraph={
               'Retrieve any snippets from the first moment you started using the app.'
             }
-            alignClassName={'left'}
+            alignClassName={'al-left'}
+            levelClassName={'lv-3'}
           />
         </div>
       </section>
@@ -63,6 +72,7 @@ function App() {
           paragraph={
             "Whether you're on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks."
           }
+          levelClassName={'lv-2'}
         />
       </section>
       <img
@@ -75,8 +85,9 @@ function App() {
           level={2}
           title={'Supercharge your workflow'}
           paragraph={"We've got the tools to boost your productivity."}
+          levelClassName={'lv-2'}
         />
-        <div className="row">
+        <div className="row tools">
           <BlocText
             level={3}
             icon={'src/assets/icon-blacklist.svg'}
@@ -85,6 +96,7 @@ function App() {
             paragraph={
               'Ensure sensitive information never makes its way to your clipboard by excluding certain sources'
             }
+            levelClassName={'lv-3'}
           />
           <BlocText
             level={3}
@@ -94,6 +106,7 @@ function App() {
             paragraph={
               'Remove unwanted formatting from copied text for a consistent look.'
             }
+            levelClassName={'lv-3'}
           />
           <BlocText
             level={3}
@@ -103,6 +116,7 @@ function App() {
             paragraph={
               'Quick preview of all snippets on your Clipboard for easy access.'
             }
+            levelClassName={'lv-3'}
           />
         </div>
       </section>
@@ -123,6 +137,7 @@ function App() {
           paragraph={
             "Available for free on the App Store. Download for Max or iOS, sync with iCloud and you're ready to start adding to your clipboard."
           }
+          levelClassName={'lv-2'}
         />
         <Download />
       </section>
