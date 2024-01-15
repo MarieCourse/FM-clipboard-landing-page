@@ -21,7 +21,6 @@
   width: 100%
   background-repeat: no-repeat
   font-size: 18px
-  // text-align: center
 
   h1, h2, h3
     color: hsl(210, 10%, 33%)
@@ -57,12 +56,6 @@
     height: 6em
     padding: 1.5em
 
-    // &:hover
-    //   filter: drop-shadow(0 0 2em #646cffaa)
-
-    // &.react:hover
-    //   filter: drop-shadow(0 0 2em #61dafbaa)
-
   a
     text-decoration: inherit
 
@@ -72,3 +65,24 @@
   .devices
     display: flex
     margin: 30px auto
+
+@media (max-width: 767px)
+  #root
+    max-width: 767px
+    width: 80%
+    margin: auto
+
+    .row
+      flex-direction: column
+      >img
+        max-width: 100%
+      &.logos, &.tools
+        margin: 0
+        gap: 50px
+        >.blocText
+          width: 100%
+        >img
+          width: 40%
+
+  .devices
+    width: 100%
