@@ -3,16 +3,16 @@ import BlocText from '../src/Components/BlocText/BlocText';
 import Download from '../src/Components/Download/Download';
 import Footer from './Components/Footer/Footer';
 import Logo from '../src/assets/logo.svg';
-import Mac from 'src/assets/image-computer.png';
-import Devices from 'src/assets/image-devices.png';
-import BlackListIcon from 'src/assets/icon-blacklist.svg';
-import TextIcon from 'src/assets/icon-text.svg';
-import PreviewIcon from 'src/assets/icon-preview.svg';
-import LogoGoogle from 'src/assets/logo-google.png';
-import LogoIBM from 'src/assets/logo-ibm.png';
-import LogoMicrosoft from 'src/assets/logo-microsoft.png';
-import LogoHP from 'src/assets/logo-hp.png';
-import LogoVector from 'src/assets/logo-vector-graphics.png';
+import Mac from '../src/assets/image-computer.png';
+import Devices from '../src/assets/image-devices.png';
+import BlackListIcon from '../src/assets/icon-blacklist.svg';
+import TextIcon from '../src/assets/icon-text.svg';
+import PreviewIcon from '../src/assets/icon-preview.svg';
+import LogoGoogle from '../src/assets/logo-google.png';
+import LogoIBM from '../src/assets/logo-ibm.png';
+import LogoMicrosoft from '../src/assets/logo-microsoft.png';
+import LogoHP from '../src/assets/logo-hp.png';
+import LogoVector from '../src/assets/logo-vector-graphics.png';
 
 function App() {
   return (
