@@ -5,15 +5,12 @@ import {
   faTwitter,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
+import Logo from '../src/assets/logo.svg';
 
 function Footer() {
   return (
     <div className="footer">
-      <img
-        src="src/assets/logo.svg"
-        alt="Logo Clipboard"
-        className="footer__logo"
-      />
+      <img src={Logo} alt="Logo Clipboard" className="footer__logo" />
       <ul>
         <li>
           <a href="#">FAQ's</a>

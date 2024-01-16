@@ -1,18 +1,24 @@
 import './App.sass';
 import BlocText from '../src/Components/BlocText/BlocText';
-// import Header from '../src/Components/Header/Header';
 import Download from '../src/Components/Download/Download';
 import Footer from './Components/Footer/Footer';
+import Logo from '../src/assets/logo.svg';
+import Mac from 'src/assets/image-computer.png';
+import Devices from 'src/assets/image-devices.png';
+import BlackListIcon from 'src/assets/icon-blacklist.svg';
+import TextIcon from 'src/assets/icon-text.svg';
+import PreviewIcon from 'src/assets/icon-preview.svg';
+import LogoGoogle from 'src/assets/logo-google.png';
+import LogoIBM from 'src/assets/logo-ibm.png';
+import LogoMicrosoft from 'src/assets/logo-microsoft.png';
+import LogoHP from 'src/assets/logo-hp.png';
+import LogoVector from 'src/assets/logo-vector-graphics.png';
 
 function App() {
   return (
     <>
       <section>
-        <img
-          src="src\assets\logo.svg"
-          alt="logo-frontend-mentor-projet"
-          className="logo"
-        />
+        <img src={Logo} alt="logo-frontend-mentor-projet" className="logo" />
         <BlocText
           level={1}
           title={'A history of everyting you copy'}
@@ -34,7 +40,7 @@ function App() {
         />
       </section>
       <section className="row devices-mac">
-        <img src="src\assets\image-computer.png" alt="computer-mac-desktop" />
+        <img src={Mac} alt="computer-mac-desktop" />
         <div>
           <BlocText
             level={3}
@@ -76,7 +82,7 @@ function App() {
         />
       </section>
       <section className="devices-tablette">
-        <img src="src\assets\image-devices.png" alt="devices" />
+        <img src={Devices} alt="devices" />
       </section>
       <section>
         <BlocText
@@ -88,7 +94,7 @@ function App() {
         <div className="row tools">
           <BlocText
             level={3}
-            icon={'src/assets/icon-blacklist.svg'}
+            icon={BlackListIcon}
             alt={'icon-blacklist'}
             title={'Create blacklists'}
             paragraph={
@@ -98,7 +104,7 @@ function App() {
           />
           <BlocText
             level={3}
-            icon={'src/assets/icon-text.svg'}
+            icon={TextIcon}
             alt={'icon-text'}
             title={'Plain text snippets'}
             paragraph={
@@ -108,7 +114,7 @@ function App() {
           />
           <BlocText
             level={3}
-            icon={'src/assets/icon-preview.svg'}
+            icon={PreviewIcon}
             alt={'icon-preview'}
             title={'Sneak preview'}
             paragraph={
@@ -119,14 +125,11 @@ function App() {
         </div>
       </section>
       <section className="row logos">
-        <img src="src/assets/logo-google.png" alt="Logo Google" />
-        <img src="src/assets/logo-ibm.png" alt="Logo IBM" />
-        <img src="src/assets/logo-microsoft.png" alt="Logo Microsoft" />
-        <img src="src/assets/logo-hp.png" alt="Logo HP" />
-        <img
-          src="src/assets/logo-vector-graphics.png"
-          alt="Logo Vector Graphics"
-        />
+        <img src={LogoGoogle} alt="Logo Google" />
+        <img src={LogoIBM} alt="Logo IBM" />
+        <img src={LogoMicrosoft} alt="Logo Microsoft" />
+        <img src={LogoHP} alt="Logo HP" />
+        <img src={LogoVector} alt="Logo Vector Graphics" />
       </section>
       <section>
         <BlocText
