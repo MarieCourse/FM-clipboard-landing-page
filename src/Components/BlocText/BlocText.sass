@@ -30,12 +30,14 @@
     margin: 50px
     width: 300px
 
-@media (max-width: 767px)
+@media (max-width: 426px)
     .blocText
         width: 100%
-        &.lv-1, &.lv-2, &.lv-3
-            h1, h2, h3
-                line-height: 1.2
+        line-height: normal
+        >h1, >h2, >h3
+            font-size: 2rem
+        >p
+            line-height: 2
 
     .al-left
         align-items: center

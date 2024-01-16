@@ -6,7 +6,7 @@ import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
-    <div>
+    <>
       <section>
         <img
           src="src\assets\logo.svg"
@@ -33,7 +33,7 @@ function App() {
           levelClassName={'lv-2'}
         />
       </section>
-      <section className="row">
+      <section className="row devices-mac">
         <img src="src\assets\image-computer.png" alt="computer-mac-desktop" />
         <div>
           <BlocText
@@ -75,11 +75,9 @@ function App() {
           levelClassName={'lv-2'}
         />
       </section>
-      <img
-        src="src\assets\image-devices.png"
-        alt="devices"
-        className="devices"
-      />
+      <section className="devices-tablette">
+        <img src="src\assets\image-devices.png" alt="devices" />
+      </section>
       <section>
         <BlocText
           level={2}
@@ -142,7 +140,7 @@ function App() {
         <Download />
       </section>
       <Footer />
-    </div>
+    </>
   );
 }
 
