@@ -5,7 +5,7 @@ import {
   faTwitter,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
-import Logo from '../src/assets/logo.svg';
+import Logo from '../../assets/logo.svg';
 
 function Footer() {
   return (
