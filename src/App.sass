@@ -1,3 +1,11 @@
+@mixin flex-direction($direction)
+  display: flex
+  @if $direction == column
+    flex-direction: column
+
+  @else
+    flex-direction: row
+
 *
   margin: 0
 body
@@ -13,60 +21,76 @@ body
   max-width: 1440px
   min-height: 100vh
   margin: auto
-  background-image: url('../src/assets/bg-header-desktop.png')
-  width: 100vw
-  background-repeat: no-repeat
   font-size: 18px
 
   #root
-    display: flex
-    align-items: center
-    flex-direction: column
+    @include flex-direction(column)
 
     h1, h2, h3
       color: hsl(210, 10%, 33%)
     h1
-      font-size: 2.5rem
+      font-size: 3rem
 
     h2
-      font-size: 2rem
+      font-size: 2.5rem
 
     h3
-      font-size: 1.5rem
+      font-size: 1.4rem
 
     p
       color: hsl(201, 11%, 66%)
 
-    section
-      display: flex
-      flex-direction: column
+    header
+      background-image: url('../src/assets/bg-header-desktop.png')
+      width: 100%
+      background-repeat: no-repeat
+      margin-top: 0
+      @include flex-direction(column)
       align-items: center
-      margin: 80px auto
+      padding: 70px 0 90px 0
+      .logo
+        height: 128px
+        padding: 64px 0 44px 0
+
+    section
+      @include flex-direction(column)
+      align-items: center
       &.devices-mac
-        display: flex
         margin: 30px auto 30px 0
+      .devices-tablette
+        margin: 110px 0
+      &.download
+        padding: 150px 0
 
     .row
-      display: flex
-      flex-direction: row
-      align-items: center
-      justify-content: flex-start
+      @include flex-direction(row)
+      &.center
+        align-items: center
+      &.snippets
+        @include flex-direction(row)
+        height: 580px
+        margin: 120px 0
+        width: 100%
+        >div
+          @include flex-direction(column)
       &.tools
-        align-items: top
-      &.logos, &.tools
-        margin: 75px 150px
-        justify-content: space-between
+        margin: 50px 0 150px 0
         gap: 20px
         >.blocText
-          width: 280px
-          >img
-            margin: 25px
-        >img
-          width: 120px
-
-    .logo
-      height: 6em
-      padding: 1.5em
+          width: 350px
+          margin: 0
+          gap: 20px
+          >img //icons
+            padding: 25px
+            height: 25px
+      &.logos
+        justify-content: space-between
+        width: 80%
+        margin-top: 70px
+        >img //logos
+          max-width: 160px
+          max-height: 50px
+          object-fit: contain
 
     a
       text-decoration: inherit
@@ -93,7 +117,7 @@ body
       .logo
         height: 8em
         margin-bottom: 50px
-      section
+      .section
         width: 80%
         margin: 60px 0
         &.devices-mac, &.devices-tablette

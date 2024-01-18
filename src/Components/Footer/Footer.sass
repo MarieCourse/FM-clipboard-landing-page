@@ -1,14 +1,15 @@
-.footer
+footer
     display: flex
     flex-direction: row
     background-color: #f5f6f8
-    height: 100px
+    height: 150px
     justify-content: space-around
     align-items: center
-    width: 100vw
-    &__logo
-        width: 30px
-        height: 30px
+    width: 100%
+    padding: 0 165px
+    > img
+        width: 55px
+        height: 55px
     > ul
         column-count: 3
         color: inherit
@@ -19,7 +20,7 @@
                 &:hover
                     color: hsl(171, 66%, 44%)
 
-    &__icons
+    .footer__icons
         gap: 20px
         .icon
             color: hsl(210, 10%, 33%)

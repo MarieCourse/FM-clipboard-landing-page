@@ -9,8 +9,8 @@ import Logo from '../../assets/logo.svg';
 
 function Footer() {
   return (
-    <div className="footer">
-      <img src={Logo} alt="Logo Clipboard" className="footer__logo" />
+    <footer>
+      <img src={Logo} alt="Logo Clipboard" />
       <ul>
         <li>
           <a href="#">FAQ's</a>
@@ -33,7 +33,7 @@ function Footer() {
         <FontAwesomeIcon icon={faTwitter} className="icon" />
         <FontAwesomeIcon icon={faInstagram} className="icon" />
       </div>
-    </div>
+    </footer>
   );
 }
 

@@ -14,7 +14,7 @@ function BlocText({
 
   return (
     <div className={`blocText ${alignClassName} ${levelClassName}`}>
-      <img src={icon} alt={alt} />
+      {icon && <img src={icon} alt={alt} />}
       <HeadingTag>{title}</HeadingTag>
       <p>{paragraph}</p>
     </div>
